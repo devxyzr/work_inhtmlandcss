@@ -4,6 +4,8 @@
   margin: 0;
 }
 
+/*---------------------------------------------------------------------HEADER ----------------------------------------------------------------------------*/
+
 .header_container {
   background-color: #545871;
   height: 750px;
@@ -17,12 +19,236 @@
   list-style: none;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: aqua;
+  background-color: #545871;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-.header_container_list li {
+.header_container_list li a {
   margin: 20px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  color: white;
+  font-weight: lighter;
+}
+
+.header_container h3 {
+  justify-self: self-start;
+  align-self: flex-end;
+  margin-left: 150px;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.header_container div {
+  grid-area: 2 / 2 / 4 / 4;
+  justify-self: center;
+  align-self: center;
+  margin-top: 70px;
+}
+
+.header_container p {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.header_container button {
+  margin-top: 50px;
+  border-radius: 50px;
+  height: 56px;
+  width: 256px;
+  border: none;
+  font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.header_container button:hover {
+  background-color: aqua;
+}
+
+.header_container span {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin-top: 100px;
+  margin-left: 150px;
+  color: white;
+  font-size: 12px;
+}
+
+/*-------------------------------------------------MAIN----------------------------------------------------------*/
+/* FIRST SECCION*/
+
+.main_firtsseccion {
+  height: 750px;
+  width: auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main_firtsseccion_rigth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.main_firtsseccion_left {
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 80px;
+}
+
+.main_firtsseccion_left h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+.main_firtsseccion_left p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.main_firtsseccion_left button {
+  margin-top: 50px;
+  border-radius: 50px;
+  height: 56px;
+  width: 256px;
+  border: none;
+  font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+  background-color: #545871;
+  color: white;
+}
+
+.main_firtsseccion_left button:hover {
+  background-color: aqua;
+}
+
+/*IMAGEN NO.1*/
+
+.rigth_img1 {
+  height: 270px;
+  width: 270px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.rigth_img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* IMAGEN NO.2*/
+
+.rigth_img2 {
+  height: 270px;
+  width: 270px;
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+
+.rigth_img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* IMAGEN NO.3*/
+
+.rigth_img3 {
+  height: 270px;
+  width: 270px;
+  justify-self: flex-end;
+  algin-self: flex-start;
+}
+.rigth_img3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* IMAGEN NO. 4*/
+
+.rigth_img4 {
+  height: 270px;
+  width: 270px;
+  justify-self: flex-start;
+  justify-self: flex-start;
+}
+
+.rigth_img4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* SECOND SECCION------------------------------------------------------*/
+
+.main_secondseccion {
+  height: 750px;
+  width: auto;
+  background-color: #f7eceb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-row: 1fr;
+}
+
+.main_secondseccion_left {
+  grid-column: 1 / 2;
+  height: 750px;
+}
+
+.main_secondseccion_left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main_secondseccion_rigth {
+  justify-self: center;
+}
+
+.main_secondseccion_rigth h2 {
+  font-size: 3rem;
+  margin-top: 150px;
+}
+
+.main_secondseccion_rigth p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-top: 100px;
+}
+
+.main_secondseccion_rigth button {
+  margin-top: 100px;
+  border-radius: 50px;
+  height: 56px;
+  width: 256px;
+  border: none;
+  font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+  background-color: #545871;
+  color: white;
+}
+
+.main_secondseccion_rigth button:hover {
+  background-color: black;
 }
