@@ -144,12 +144,231 @@ main {
 
 /*Tablas CSS Grid responsive*/
 
-.main--table-container {
-  font-family: "Inter", monospace;
+.main_seccion_table {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--off-white);
 }
 
-.main--table-container .main--grid-container {
-  width: 60%;
+.main_table {
+  width: 201px;
+  height: 250px;
+}
+
+.main_seccion_table .tittle_table {
+  margin-right: 100px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  color: var(--bitcoin-orange);
+}
+
+.main_content_table {
+  height: 160px;
+  max-width: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #ffffff;
+  border-radius: 8px;
+  gap: 5px;
+}
+
+.content_table_coin {
+  justify-self: start;
+  align-self: center;
+  margin-left: 10px;
+  font-family: sans-serif; /*Cambiar font family*/
+  font-size: 1.6rem;
+  color: #b5b0ac;
+}
+
+.content_table_value {
+  justify-self: start;
+  align-self: center;
+  margin-left: 10px;
+  font-family: sans-serif; /*Cambiar font family*/
+  font-size: 1.4rem;
+  color: #757575;
+}
+
+.content_table_value .up {
+  display: inline-block;
+  align-self: flex-end;
+  height: 10px;
+  width: 20px;
+  background-image: url(./assets/icons/trending-up.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: #ffffff;
+}
+
+.content_table_value .down {
+  display: inline-block;
+  align-self: flex-end;
+  height: 10px;
+  width: 20px;
+  background-image: url(./assets/icons/trending-down.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: #ffffff;
+}
+
+.main_seccion_table .main--table-update {
+  align-self: center;
+  width: 17.3rem;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px auto auto auto;
+  font-size: 1.2rem;
+  background-color: #ffe9d5;
+}
+
+/* SECCION DE BENEFICIOS LOGO/TITULO/PARRAFO*/
+
+.main-product-detail {
+  position: relative; /*Este position relative le va servir a el position absolute como contenedor padre*/
+  width: 100%;
+  min-width: 320px;
+  height: auto; /* Solo crece a medida de que el contenido llega*/
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+}
+
+.product-detail--papatata-logo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url(./assets/icons/batata.svg);
+}
+
+.product-detail--tittle {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product-detail--tittle h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.product-detail--tittle p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+/* SECCION DE BENEFICIOS LOGO / TARJETAS */
+
+
+.product-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width:  400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black) ;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .icon_clock {
+display: inline-block;
+width: 20px;
+height: 20px;
+margin-bottom: 10px;
+background-image: url(./assets/icons/clock.svg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.product-detail--card .icon_eye {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url(./assets/icons/eye.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+.product-detail--card .icon_cash {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./assets/icons/dollar-sign.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+.product-detail--card .icon_check {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-bottom: 10px;
+      background-image: url(./assets/icons/check-circle.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
+
+.product--card-tittle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+/*SECCION IMG - CONOCELO HOY*/
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url(./assets/img/bitcoinbaby2x.jpg);  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+  text-align: center;
+
 }
